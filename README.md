@@ -1,5 +1,5 @@
-# Consensus Algorithm
-This is a simple Consensus Algorithm and is defined as follows: blocks are produced in a constant frequency of 1 block every 5 seconds. Nodes propose new blocks one after another in a round-robin cycle. If one node skips its turn, the block is not proposed in the given time window. Every new block contains a single information: an integer. The block is valid if the integer proposed is divisible by the integer from the previous block. All nodes should validate this rule and reject invalid blocks.
+# Simple Consensus Algorithm
+This is a Simple Consensus Algorithm and is defined as follows: blocks are produced in a constant frequency of 1 block every 5 seconds. Nodes propose new blocks one after another in a round-robin cycle. If one node skips its turn, the block is not proposed in the given time window. Every new block contains a single information: an integer. The block is valid if the integer proposed is divisible by the integer from the previous block. All nodes should validate this rule and reject invalid blocks.
 
 For the purpose of communication for this task, I have used p2p communication. The nodes are communicating over the network layer. I have used the [`libp2p`](https://docs.libp2p.io/) library for the same.
 
